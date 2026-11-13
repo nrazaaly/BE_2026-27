@@ -56,36 +56,26 @@ Configure the compilation with MPI support:
 ./meson.py setup build --prefix="$HOME/SU2-8.5.0-install" -Dwith-mpi=enabled
 ```
 
-Compile using 4 CPU cores:
+Compile using 4 CPU cores, then install:
 
 ```bash
 ./ninja -C build -j 4
-```
-
-Install SU2:
-
-```bash
 ./ninja -C build install
 ```
 
+
 ## 4. Configure the environment
 
-Add the following lines to your `~/.bashrc` file:
+Add the following lines to your `~/.bashrc` file and reload configuration:
 
 ```bash
-echo 'export SU2_HOME="$HOME/Downloads/SU2-8.5.0"' >> ~/.bashrc
+echo 'export SU2_HOME="$HOME/Documents/SU2-8.5.0"' >> ~/.bashrc
 echo 'export SU2_RUN="$HOME/SU2-8.5.0-install/bin"' >> ~/.bashrc
 echo 'export PATH="$SU2_RUN:$PATH"' >> ~/.bashrc
 echo 'export PYTHONPATH="$SU2_RUN:$PYTHONPATH"' >> ~/.bashrc
-```
-
-Reload the configuration:
-
-```bash
 source ~/.bashrc
 ```
 
-**Note:** If you extracted SU2 somewhere else, adapt the `SU2_HOME` path accordingly.
 
 ## 5. Test the installation
 
