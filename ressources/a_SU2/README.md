@@ -2,13 +2,14 @@
 
 This tutorial explains how to install **SU2 8.5.0 (Harrier)** from source on Ubuntu Linux.
 
-## 1. Install dependencies
+## 1. Install dependencies and paraview
 
 Open a terminal and run:
 
 ```bash
 sudo apt update
 sudo apt install -y build-essential python3 python3-dev openmpi-bin libopenmpi-dev
+sudo apt install -y paraview
 ```
 
 ## 2. Download SU2 8.5.0
