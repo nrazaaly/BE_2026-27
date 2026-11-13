@@ -78,35 +78,6 @@ source ~/.bashrc
 ```
 
 
-## 5. Test the installation on a NACA0012 profile
-
-
-naca.cfg – SU2 configuration file
-mesh.su2 – computational mesh
-
-Open a terminal and create a directory for the test:
-Download the NACA files in /a_testCases/naca   
-naca.cfg 
-mesh.su2
-
-
-Go to Téléchargements folder and Create a folder to test
-```bash
-mkdir -p ~/Documents/test/naca
-mv naca.cfg
-```
-
-Run 
-```bash
-SU2_CFD naca.cfg
-```
-
-Open solution with Paraview
-```bash
-paraview flow.vtu
-```
-
-
 
 ## 5. Test the installation on a NACA 0012 airfoil
 
