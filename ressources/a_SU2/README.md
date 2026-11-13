@@ -78,40 +78,71 @@ source ~/.bashrc
 ```
 
 
-## 5. Test the installation
+## 5. Test the installation on a NACA0012 profile
 
-Run:
 
+naca.cfg – SU2 configuration file
+mesh.su2 – computational mesh
+
+Open a terminal and create a directory for the test:
+Download the NACA files in /a_testCases/naca   
+naca.cfg 
+mesh.su2
+
+
+Go to Téléchargements folder and Create a folder to test
 ```bash
-SU2_CFD -h
+mkdir -p ~/Documents/test/naca
+mv naca.cfg
 ```
 
-If the help message appears, SU2 is correctly installed!
-
-## 6. Run a simulation
-
-Go to the directory containing your configuration file (`.cfg`):
-
+Run 
 ```bash
-cd path/to/your/simulation
+SU2_CFD naca.cfg
 ```
 
-Run a serial simulation:
-
+Open solution with Paraview
 ```bash
-SU2_CFD config.cfg
+paraview flow.vtu
 ```
 
-Or run a parallel simulation using 4 MPI processes:
+
+
+## 5. Test the installation on a NACA 0012 airfoil
+
+Download the two files from the GitHub a_testCases/naca/ directory:
+
+- `naca.cfg` – SU2 configuration file
+- `mesh.su2` – computational mesh
+
+Open a terminal and create a directory for the test:
 
 ```bash
-mpirun -np 4 SU2_CFD config.cfg
+mkdir -p ~/Documents/test/naca
 ```
 
----
+Copy the downloaded files into the test directory:
 
-### Useful links
+```bash
+cp ~/Downloads/naca.cfg ~/Documents/test/naca/
+cp ~/Downloads/mesh.su2 ~/Documents/test/naca/
+```
 
-* [Official SU2 website](https://su2code.github.io/)
-* [SU2 GitHub repository](https://github.com/su2code/SU2)
-* [SU2 documentation](https://su2code.github.io/docs/)
+Go to the test directory:
+
+```bash
+cd ~/Documents/test/naca
+```
+
+Run the simulation:
+
+```bash
+SU2_CFD naca.cfg
+```
+
+Once the simulation has converged, open the solution in ParaView:
+
+```bash
+paraview flow.vtu
+```
+
