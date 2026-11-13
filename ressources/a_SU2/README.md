@@ -95,8 +95,8 @@ mkdir -p ~/Documents/test/naca
 Copy the downloaded files into the test directory:
 
 ```bash
-cp ~/Downloads/naca.cfg ~/Documents/test/naca/
-cp ~/Downloads/mesh.su2 ~/Documents/test/naca/
+cp ~/Téléchargements/naca.cfg ~/Documents/test/naca/
+cp ~/Téléchargements/mesh.su2 ~/Documents/test/naca/
 ```
 
 Go to the test directory:
