@@ -8,13 +8,7 @@ Open a terminal and run:
 
 ```bash
 sudo apt update
-sudo apt install -y build-essential python3 python3-dev
-```
-
-For parallel computations with MPI, also install:
-
-```bash
-sudo apt install -y openmpi-bin libopenmpi-dev
+sudo apt install -y build-essential python3 python3-dev openmpi-bin libopenmpi-dev
 ```
 
 ## 2. Download SU2 8.5.0
