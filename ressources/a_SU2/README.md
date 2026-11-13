@@ -17,12 +17,30 @@ Download the source code directly from GitHub:
 
 **[Download SU2 8.5.0 (ZIP)](https://github.com/su2code/SU2/archive/refs/tags/v8.5.0.zip)**
 
-Extract the ZIP archive. For example, if it is in your Downloads folder:
+Extract the ZIP archive:
 
 ```bash
-cd ~/Downloads
+cd ~/Téléchargements
 unzip v8.5.0.zip
 ```
+
+Check where you are: 
+```bash
+pwd 
+```
+
+List of files/folders in current folder: 
+```bash
+ls
+```
+
+Move the folder to Documents, erase zip file, and go to the SU2 folder:
+```bash
+mv SU2-8.5.0  ~/Documents
+rm -r v8.5.9.zip
+cd ~/Documents
+```
+
 
 Enter the extracted directory:
 
